@@ -16,6 +16,7 @@ public class RepositorioMem implements Repositorio {
     private ArrayList<TipoUtilizador> l_tipo;
     private ArrayList<Utilizador> l_utilizador;
     private ArrayList<Eventos> l_eventos;
+    private ArrayList<PessoaEvento> l_pessoaEvento;
 
 
     public RepositorioMem() {
@@ -33,6 +34,7 @@ public class RepositorioMem implements Repositorio {
         l_tipo = new ArrayList<TipoUtilizador>();
         l_utilizador = new ArrayList<Utilizador>();
         l_eventos = new ArrayList<Eventos>();
+        l_pessoaEvento = new ArrayList<PessoaEvento>();
 
     }
 
@@ -52,6 +54,7 @@ public class RepositorioMem implements Repositorio {
     void	adicionaTipoUtilizador(TipoUtilizador tipo){ l_tipo.add(tipo); }
     void	adicionaUtilizador(Utilizador utilizador){ l_utilizador.add(utilizador); }
     void	adicionaEventos(Eventos eventos){ l_eventos.add(eventos); }
+    void	adicionaPessoaEvento(PessoaEvento Pevento){ l_pessoaEvento.add(Pevento); }
 
     public Emprestimo devolveEmprestimoDaRequisicao(Requisicao r){
         for (Emprestimo e:l_emprestimo){

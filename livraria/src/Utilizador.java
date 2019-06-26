@@ -6,9 +6,10 @@ public class Utilizador extends Object{
 	TipoUtilizador tipoUtilizador;
 	
 	
-	public Utilizador(String nome_, String estado_) {
+	public Utilizador(String nome_, String estado_ , TipoUtilizador tipoUtilizador_) {
 		this.nome = nome_;
 		this.estado = estado_;
+		this.tipoUtilizador = tipoUtilizador_;
 	}
 	
 	public String getEstado() {
@@ -21,5 +22,17 @@ public class Utilizador extends Object{
 	
 	public TipoUtilizador getTipoUtilizador() {
 		return this.tipoUtilizador;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public void setEstado(String estado) {
+		this.estado = estado;
+	}
+
+	public void setTipoUtilizador(TipoUtilizador tipoUtilizador) {
+		this.tipoUtilizador = tipoUtilizador;
 	}
 }

@@ -17,8 +17,11 @@ public class AcessoAntecipado {
         return  entradaNovoLivro.getData().plusDays(7)  ;
     }
 
-    public LocalDate Set_Data_Antecipada() {return  entradaNovoLivro.getData().plusDays(7)  ; }
+    public void setEntradaNovoLivro(EntradaNovoLivro entradaNovoLivro) {
+        this.entradaNovoLivro = entradaNovoLivro;
+    }
 
-
-
+    public void setData_Antecipada(LocalDate data_Antecipada) {
+        Data_Antecipada = data_Antecipada;
+    }
 }

@@ -19,13 +19,8 @@ public class EdicaoLimitada {
 
     }
 
-    public String Set_EdicaoLimitada(Copia c) {
 
-        if (r.devolveNcopias() <= 5)
-        return "Edicao limitada de id "+ c.getLivro();
-     return "Nao e edicao limitada de id "+c.getLivro();
-
+    public void setC(Copia c) {
+        this.c = c;
     }
-
-
 }
